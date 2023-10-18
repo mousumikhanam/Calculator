@@ -1,7 +1,20 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function App() { 
+  const handleOperatorClick = (value) => {
+    console.log(value);
+  }
+  const handleNumberClick = (value) => {
+    console.log(value);
+  }
+  const handleAllclearClick = () => {
+    console.log();
+  }
+  const handleEqualsClick = () => {
+    console.log();
+  }
+
   return (
     <div className="App">
       <div className="outerbox">
@@ -9,36 +22,36 @@ function App() {
           <input type="number" className="calculation" />
         </div>
         <div className="operators">
-          <p className='operatorstyle1'>+</p>
-          <p className='operatorstyle1'>-</p>
-          <p className='operatorstyle1'>*</p>
-          <p className='operatorstyle1'>/</p>
+          <p className='operatorstyle1' onClick={() => handleOperatorClick('+')}>+</p>
+          <p className='operatorstyle1' onClick={() => handleOperatorClick('-')}>-</p>
+          <p className='operatorstyle1' onClick={() => handleOperatorClick('*')}>*</p>
+          <p className='operatorstyle1' onClick={() => handleOperatorClick('/')}>/</p>
         </div>
         <div className="numbers">
           <div className='leftnum'>
             <div className='numstyle'>
-              <p className='operatorstyle'>1</p>
-              <p className='operatorstyle'>2</p>
-              <p className='operatorstyle'>3</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('1')}>1</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('2')}>2</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('3')}>3</p>
             </div>
             <div className='numstyle'>
-              <p className='operatorstyle'>4</p>
-              <p className='operatorstyle'>5</p>
-              <p className='operatorstyle'>6</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('4')}>4</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('5')}>5</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('6')}>6</p>
             </div>
             <div className='numstyle'>
-              <p className='operatorstyle'>7</p>
-              <p className='operatorstyle'>8</p>
-              <p className='operatorstyle'>9</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('7')}>7</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('8')}>8</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('9')}>9</p>
             </div>
             <div className='numstyle2'>
               <p></p>
-              <p className='operatorstyle'>0</p>
-              <p className='operatorstyle'>AC</p>
+              <p className='operatorstyle' onClick={() => handleNumberClick('0')}>0</p>
+              <p className='operatorstyle' onClick= {() => handleAllclearClick()}>AC</p>
             </div>           
           </div>
           <div className='equals'>
-            <p className="equalstyle">=</p>
+            <p className="equalstyle"  onClick= {() => handleEqualsClick()}>=</p>
           </div>
         </div>
       </div>
