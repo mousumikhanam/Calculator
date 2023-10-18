@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
 
+
 function App() { 
+  const [input, setInput] = useState([]);
+  const [output, setOutput] = useState([]);
+
   const handleOperatorClick = (value) => {
-    console.log(value);
+     
   }
   const handleNumberClick = (value) => {
-    console.log(value);
+    const newInput = input.push(value)
+    setInput(newInput);
   }
   const handleAllclearClick = () => {
     console.log();
