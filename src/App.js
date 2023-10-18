@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const handleOperatorClick = (value) => {
+    console.log(value)
+  }
   return (
     <div className="App">
       <div className="outerbox">
@@ -9,7 +12,7 @@ function App() {
           <input type="number" className="calculation" />
         </div>
         <div className="operators">
-          <p className='operatorstyle1'>+</p>
+          <p className='operatorstyle1' onClick={() => handleOperatorClick('+')}>+</p>
           <p className='operatorstyle1'>-</p>
           <p className='operatorstyle1'>*</p>
           <p className='operatorstyle1'>/</p>
