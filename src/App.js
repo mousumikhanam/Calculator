@@ -1,5 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Calculator from "./components/Calculator";
+import TodoList from "./components/TodoList";
 
 function App() {
   const handleOperatorClick = (value) => {
@@ -12,7 +15,7 @@ function App() {
           <input type="number" className="calculation" />
         </div>
         <div className="operators">
-          <p className='operatorstyle1' onClick={() => handleOperatorClick('+')}>+</p>
+          <p className='operatorstyle1'>+</p>
           <p className='operatorstyle1'>-</p>
           <p className='operatorstyle1'>*</p>
           <p className='operatorstyle1'>/</p>

@@ -1,0 +1,43 @@
+.page {
+  height: "100vh";
+  width: "100%";
+}
+.mainInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.inputField {
+  min-width: 500px;
+  min-height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px #e5e2e2;
+}
+
+.itemBox {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.arrayListBox {
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  min-height: 250px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 2px 2px #e5e2e2;
+  margin: 20px;
+  background-color: rgb(255, 255, 228);
+}
+.cross {
+  cursor: pointer;
+}
